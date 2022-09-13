@@ -1,73 +1,120 @@
-<!-- İlk Websitemizi Hazırlıyoruz Ödevi  -->
-<h1>Halil Teke</h1>
-<h3>Hakkında</h3>
-<p>Merhaba ben Halil :)</p>
-<p>Bir şeyler deniyorum</p>
-<p>---------------------------------------------</p>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+</head>
+<body>
+<!-- Navbar Start -->
+<header>
+    <nav>
+        <ul>
 
-<!-- Sayfa Sonuna Yönlendirme -->
-<a href="#footer">Sayfa Sonuna Git</a>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
 
-<!-- Sıralı Listeler -->
-<h3>Sıralı Listeler</h3>
+            <!-- Sayfa Sonuna Yönlendirme -->
+            <a href="#footer"><em><strong>Sayfa Sonuna Git</strong></em></a>
 
-<ol><!--Sıralı liste başlangıç -->
-<li><p>Sıralı Listeler</p></li>
-<p> Gerçek <b>tereyağı</b> nasıl anlaşılır ?</p>
-<ol>
-    <li>Oda sıcaklığında tamamen erimez</li>
-    <li>Suyun içinde tek parça halinde çözünür</li>
-    <li>Tereyağı rengi sarı yada beyaz olabilir</li>
-</ol>
+        </ul>
+    </nav>
+</header>
+<!-- Navbar End -->
 
-<!-- Roma Rakamı ve Alfabetik Sıralı Listeler -->
-<li><p>Roma Rakamı Sıralı Listeler</p></li>
-<ol type="I">
-    <li>Javascript</li>
-    <li>C#</li>
-    <li>Php</li>
-  </ol>
-<li><p>Alfabetik Sıralı Listeler</p></li>
-  <ol type="A">
-    <li>Javascript</li>
-    <li>C#</li>
-    <li>Php</li>
-  </ol>
-</ol> <!--Sıralı liste kapanış -->
+<!-- Content Start -->
+<section>
+    <article>    
+        <!-- İlk Websitemizi Hazırlıyoruz Ödevi  -->
+        <h1>Halil Teke</h1>
+        <h3>Hakkında</h3>
+        <p>Merhaba ben Halil :)</p>
+        <p>Bir şeyler deniyorum</p>
+        <img src="https://avatars.githubusercontent.com/u/53276189?s=64&v=4" alt="photo 1">
+    </article>
 
-  <!-- Sırasız Listeler -->
-  <h3>Sırasız Listeler</h3>
+    <article>
+        <!-- Sıralı Listeler -->
+        <h3>Sıralı Listeler</h3>
+            <ol><!--Sıralı liste başlangıç -->
+                <li><p>Sıralı Listeler</p></li>
+                    <p> Gerçek <b>tereyağı</b> nasıl anlaşılır ?</p>
+            <ol>
+                <li>Oda sıcaklığında tamamen erimez</li>
+                <li>Suyun içinde tek parça halinde çözünür</li>
+                <li>Tereyağı rengi sarı yada beyaz olabilir</li>
+            </ol>
+            
+                <!-- Roma Rakamı ve Alfabetik Sıralı Listeler -->
+                <li><p>Roma Rakamı Sıralı Listeler</p></li>
+            <ol type="I">
+                <li>Javascript</li>
+                <li>C#</li>
+                <li>Php</li>
+            </ol>
+                <li><p>Alfabetik Sıralı Listeler</p></li>
+            <ol type="A">
+                <li>Javascript</li>
+                <li>C#</li>
+                <li>Php</li>
+            </ol>
+            </ol> <!--Sıralı liste kapanış -->
+    </article>
 
-  <ol><!--Sırasız liste açılış -->
-  <ul>
-    <li>Çay</li>
-    <li>Türk Kahvesi</li>
-    <li>Süt</li>
-  </ul> 
+    <article>
+        <!-- Sırasız Listeler -->
+        <h3>Sırasız Listeler</h3>
+
+            <ol><!--Sırasız liste açılış -->
+                <ul>
+                    <li>Çay</li>
+                    <li>Türk Kahvesi</li>
+                    <li>Süt</li>
+                </ul> 
 
   <!-- Listenin Başındaki Daire Silme -->
-<li><p>Listenin Başındaki Daire Silme</p></li>
-  <ul style="list-style-type:none">
-    <li>Çay</li>
-    <li>Türk Kahvesi</li>
-    <li>Süt</li>
-  </ul>
+                <li><p>Listenin Başındaki Daire Silme</p></li>
+            <ul style="list-style-type:none">
+                <li>Çay</li>
+                <li>Türk Kahvesi</li>
+                <li>Süt</li>
+            </ul>
 
   <!-- Liste Başını Daire, Kare Yapmak -->
-<li><p>Liste Başını Daire, Kare Yapmak</p></li>
-  <ul style="list-style-type:square">
-    <li>Telefon</li>
-    <li>Bilgisayar</li>
-    <li>Yazıcı</li>
-  </ul>
+                <li><p>Liste Başını Daire, Kare Yapmak</p></li>
+            <ul style="list-style-type:square">
+                <li>Telefon</li>
+                <li>Bilgisayar</li>
+                <li>Yazıcı</li>
+            </ul>
 
-</ol><!--Sırasız liste kapanış -->
+            </ol><!--Sırasız liste kapanış -->
 
-<!-- Sayfa içinde geçiş -->
-<h3 id="footer">Sayfa Sonu</h3>
-<p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veritatis aperiam laboriosam culpa nobis ea eligendi reiciendis voluptate. Mollitia nemo quae alias inventore officiis sequi ipsam laborum, placeat dolorem maxime!</p>
+    </article>
 
-<!-- Href özelliği başka sayfaya geçiş  -->
-<a href="iletisim.html" target="_blank">
-    İletişim Sayfasına Git
-</a>
+</section>
+
+<!-- Content End -->
+
+<!-- Footer Start -->
+<footer>
+    <section>
+        <!-- Sayfa içinde geçiş -->
+        <h3 id="footer">Sayfa Sonu</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veritatis aperiam laboriosam culpa nobis ea eligendi reiciendis voluptate. Mollitia nemo quae alias inventore officiis sequi ipsam laborum, placeat dolorem maxime!
+            </p>
+    </section>
+    <nav>
+        <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    </footer>
+<!-- Footer End -->
+</body>
+</html>
