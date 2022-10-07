@@ -1,29 +1,54 @@
-let ulDOM = document.querySelector("#list") // unordered liste elemanına ulaş
-let task = document.querySelector("#task") // input(placeholder) elemanına ulaş
-let btn = document.querySelector("#liveToastBtn") // butona ulaş
-//let val = localStorage.getItem("do") //localStorage daki değeri al
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
 
-//btn.addEventListener("click", theValue) // butona tıkladığında theValue fonksiyonunu çalıştır
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
 
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
 
+// Create a new list item when clicking on the "Add" button
 function newElement() {
-    if(task.value===""){ //Girilen değeri kontrol et eğer boşsa alert ver
-        alert("Lütfen yazı yazınız")
-    }
-    else{
-        addElement() // Girilen bilgi doğruysa addElement fonksiyonunu çalıştır
-    }
-}
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("task").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    $(".error").toast("show")
+  } else {
+    $(".success").toast("show");
+  }
+  document.getElementById("task").value = "";
 
-// Yeni liste oluştur
-function addElement(){
-    let liDOM = document.createElement("li") // liste elemanı oluştur
-    ulDOM.append(liDOM) // liste elemanını en sona ekle
-    liDOM.innerHTML = task.value // input kısmına giren değeri listeye yazdır
-}
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
 
-// Inputa girilen değeri localStorag a kaydet
-// function theValue(event) {
-//     event.preventDefault() // 
-//     localStorage.setItem("do", task.value) // inputa girilen değeri kaydet
-// }
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
