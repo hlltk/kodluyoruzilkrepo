@@ -35,7 +35,7 @@ function newElement() {
   if (inputValue === '') {
     $(".error").toast("show")
   } else {
-    $(".success").toast("show");
+    document.getElementById("list").appendChild(li);
   }
   document.getElementById("task").value = "";
 
