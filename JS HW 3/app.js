@@ -1,3 +1,5 @@
+
+
 const menu = [
   {
     id: 1,
@@ -81,3 +83,63 @@ const menu = [
     desc: `Red bean paste dessert, serving with honey.`,
   },
 ];
+
+const section = document.querySelector(".section-center")
+const btnContainer = document.querySelector(".btn-container")
+
+let categories = menu.map(function (c) {
+  return c.category
+})
+
+let temizMenu = ["All", ...new Set(categories)]
+
+const categoryList = () => {
+  const categoryBtns = temizMenu.map((category) => {
+    return `<button class="btn btn-outline-dark btn-item" data-id=${category}>${category}</button>`
+  }).join("")
+
+  btnContainer.innerHTML = categoryBtns
+}
+categoryList()
+
+const monu = (menuAl) => {
+  const menuListele = menuAl.map((yemek) => {
+    return `<div class="menu-items col-lg-6 col-sm-12">
+              <img
+                  src=${yemek.img}
+                  alt=${yemek.title}
+                  class="photo"
+                  />
+                  <div class="menu-info">
+                    <div class="menu-title">
+                      <h4>${yemek.title}</h4>
+                      <h4 class="price">${yemek.price}</h4>
+                    </div>
+                    <div class="menu-text">
+                      ${yemek.desc}
+                    </div>
+                  </div>
+                </div>`
+  }).join("")
+  section.innerHTML = menuListele
+
+}
+monu(menu)
+
+const btnOn = document.querySelectorAll(".btn-item")
+btnOn.forEach(function (c) {
+  c.addEventListener("click", mutfak)
+})
+
+function mutfak() {
+  if (this.getAttribute("data-id") === "All") {
+    monu(menu)
+  }
+  else {
+    let kat = this.getAttribute("data-id")
+    const butCategory = menu.filter(function (yemegimiz) {
+      return kat == yemegimiz.category
+    })
+    monu(butCategory)
+  }
+}
