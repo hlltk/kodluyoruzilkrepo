@@ -1,25 +1,11 @@
 # kodluyoruzilkrepo
-Kodluyoruz Eğitimi kapsamında açtığım ilk repo
-# Kodluyoruz Markdown Ödev 1
-## Markdown Notları
-[Daha Detaylı İncelemek İçin Tıklayınız](https://education.github.com/git-cheat-sheet-education.pdf)
+It is the first repo I opened during my front-end web development course, given by the [Patika.dev](https://app.patika.dev/paths)
+The repo contains:
+1- Patika.dev tutorials
+2- Patika.dev homework
+3- My free projects
 
-### Örnek 1 
-**kalın**
+[Check the course](https://app.patika.dev/paths/baslangic-seviye-frontend-web-development-patikasi) and [my certificate.](https://app.patika.dev/hlltk)
 
-### Örnek 2
-*italik*
 
-### Örnek 3
-***bolditalik***
 
-### Örnek 4
-- Liste1
-- Liste2
-
-### Örnek 5
-* Liste1 farklı yazılım
-* Liste2 farklı yazılım
-
-### Örnek 6
-![Görsel Ekleme](https://raw.githubusercontent.com/Kodluyoruz/taskforce/main/git/odev1/figures/markdown.png)
