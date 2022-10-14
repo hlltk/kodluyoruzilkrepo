@@ -1,0 +1,55 @@
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.underLine {
+    height: 0.25rem;
+    width: 5rem;
+    background: var(--clr-primary-5);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    width: 80vw;
+    max-width: var(--fixed-width);
+}
+
+.review {
+    background: var(--clr-white);
+    padding: 1.5rem 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.prev-btn,
+.next-btn {
+    font-size: 1.25rem;
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.randomButon {
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
