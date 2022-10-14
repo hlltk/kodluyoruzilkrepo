@@ -10,7 +10,7 @@ The repo contains:
 3- My free projects
 <br>
 
-[Check the course](https://app.patika.dev/paths/baslangic-seviye-frontend-web-development-patikasi) and [my certificate.](https://app.patika.dev/hlltk)
+[Check out the course](https://app.patika.dev/paths/baslangic-seviye-frontend-web-development-patikasi) and [my certificate.](https://app.patika.dev/hlltk)
 
 
 
